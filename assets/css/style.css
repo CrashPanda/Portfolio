@@ -78,7 +78,7 @@ blockquote {
 blockquote::before {
   content: '\e67e';
   font-family: 'themify';
-  color: #ff1939;
+  color: #ba84bc;
   position: absolute;
   top: 0;
   left: 0;
@@ -287,16 +287,7 @@ textarea {
   color: #272727;
 }
 
-.about-container {
- padding-top: 240px;
-}
-
-.about {
-  /* padding-top: 20px; */
-}
-
 .padding {
-  padding: 50px 0;
   overflow: hidden;
 }
 .text-right {
@@ -1046,6 +1037,11 @@ body .frame-line.left-frame {
 }
 
 @media (max-width: 47.9em) {
+
+  .padding {
+    padding: 20px 25px;
+  }
+
   .frame-line {
     display: none;
   }
@@ -1059,13 +1055,18 @@ body .frame-line.left-frame {
   vertical-align: middle;
   position: relative;
   float: left;
-  height: 100px;
-  /* padding: 20px 0 0; */
+  height: 60px;
+  max-width: 90%;
   /* line-height: 1em;
   color: #272727;
   font-size: 28px;
   font-weight: 600; */
 }
+
+.header-logo {
+   padding: 20px 0 0 15px;
+}
+
 /* 
 .logo span {
   position: relative;
@@ -1081,7 +1082,11 @@ body .frame-line.left-frame {
 } */
 
 .header-inner {
-  padding: 20px 0;
+  text-align: center;
+}
+
+.header-inner a {
+  padding-right: 15px;
 }
 
 .header-wrap {
@@ -1091,7 +1096,7 @@ body .frame-line.left-frame {
   -ms-user-select: none;
   user-select: none;
   top: 20px;
-  padding-top: 50px;
+  /* padding: 50px 10px; */
   left: 0;
   width: 100%;
   z-index: 555;
@@ -1100,7 +1105,7 @@ body .frame-line.left-frame {
 }
 
 .header-wrap .logo {
-  line-height: 80px;
+  /* line-height: 60px; */
 }
 
 .header-fixed,
@@ -1119,6 +1124,52 @@ body .frame-line.left-frame {
 
 
 @media (min-width: 48em) {
+  
+  .services-padding {
+    padding: 20px 25px;
+  }
+  
+  .logo {
+    height: 100px;  
+  }
+
+  .header-inner {
+    padding-top: 50px;
+  }
+
+  .header-logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-container {
+    padding-top: 300px;
+  }
+
+  .small-title {
+    margin: 5px 0 15px 0;
+  }
+
+  .large-title {
+    /* margin: 50px 0 0; */
+  }
+
+  .skills-row {
+    margin: 50px 0;
+  }
+
+  .skills-2 {
+    margin-top: 15px;
+  }
+
+  /* .services-2 {
+    margin-top: 50px;
+  } */
+
+  .gutter {
+    margin-top: 50px;
+  }
+
   .header-scroll-up.scroll-down {
     transform: translateY(-100%);
     opacity: 0;
@@ -1128,8 +1179,18 @@ body .frame-line.left-frame {
   background-color: #fff;
   opacity: 1;
 }
+
 @media (max-width: 47.9em) {
-  .header-fixed,
+
+  .about {
+    padding: 40px 40px 5px;
+  }
+
+ .about-container {
+  /* padding-top: 100px; */
+ }
+ 
+ .header-fixed,
   .header-scroll-up {
     position: static;
   }
@@ -1205,8 +1266,7 @@ body .frame-line.left-frame {
 }
 
 .header-wrap.minimal-menu .menu-toggle:not(.mobile-menu-toggle) {
-  margin: 0 10px 0 30px;
-  /* margin-top: 25px; */
+  margin: 0 0 0 30px;
   display: inline-block;
 }
 .header-wrap:not(.minimal-menu) .menu-toggle:not(.mobile-menu-toggle) {
@@ -1218,7 +1278,8 @@ body .frame-line.left-frame {
   width: 1.25em;
   height: 1.5em;
   padding: 0;
-  margin-top: -1px;
+  margin: -1px 15px 0 0px;
+  /* margin-top: -1px; */
   vertical-align: middle;
   font-size: 14px;
 
@@ -1277,6 +1338,7 @@ body .frame-line.left-frame {
 
 
 @media (min-width: 48em) {
+  
   .header-wrap.minimal-menu .primary-menu {
     visibility: hidden;
     transition: opacity 0.45s ease-in-out;
@@ -1408,7 +1470,7 @@ body .frame-line.left-frame {
   }
   .primary-menu > ul > li.menu-item-has-children ul.sub-menu > li.current-page-item > a {
     background-color: #151515;
-    color: #fff;
+    /* color: #fff; */
   }
   .primary-menu > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-children > ul.sub-menu {
     left: 100%;
@@ -1436,11 +1498,11 @@ body .frame-line.left-frame {
     max-width: 100%;
     padding: 0;
   }
-  .header-wrap .logo {
+  /* .header-wrap .logo {
     margin-left: 15px;
-  }
+  } */
   .header-wrap .menu-toggle.mobile-menu-toggle {
-    margin-right: 15px;
+    /* margin-right: 15px; */
   }
   .header-wrap.minimal-menu .menu-toggle:not(.mobile-menu-toggle) {
     display: none;
@@ -1471,16 +1533,15 @@ body .frame-line.left-frame {
   }
   .primary-menu > ul li:not(.sub-active):hover > a,
   .primary-menu > ul li.sub-active > a {
-    background-color: #151515;
-    color: #fff;
+    /* background-color: #151515; */
+    /* color: #fff; */
   }
   .primary-menu > ul a {
     display: block;
     background-color: #272727;
-    padding: 10px 15px;
     font-weight: 600;
     /* font-size: 20px; */
-    color: rgba(255,255,255,0.6);
+    color: #ffffff;
   }
   li.menu-item-has-children > a::after {
     float: right;
@@ -1496,12 +1557,15 @@ body .frame-line.left-frame {
     /* font-family: 'FontAwesome'; */
   }
   ul li.current-menu-item > a {
-    background-color: #151515;
-    color: #fff;
+    /* background-color: #151515; */
+    /* color: #fff; */
+    /* color: rgba(255,255,255,0.6); */
+
   }
   ul li.current-page-item > a {
-    background-color: #1a1a1a;
-    color: #fff;
+    /* background-color: #1a1a1a; */
+    /* color: #fff; */
+    /* color: rgba(255,255,255,0.6); */
   }
 }
 @media (min-width: 48em) {
@@ -1516,6 +1580,10 @@ body .frame-line.left-frame {
 @media (min-width: 48em) {
   .menu-toggle.mobile-menu-toggle {
     display: none !important;
+  }
+
+  .button-container {
+    padding: 25px;
   }
 }
 .toggle-filter {
@@ -1574,6 +1642,7 @@ body .frame-line.left-frame {
 .filter-open .toggle-filter {
   color: #272727;
 }
+
 @media (max-width: 33.9em) {
   .filters-wrap a {
     display: block;
@@ -2018,6 +2087,11 @@ body .frame-line.left-frame {
   margin-bottom: 30px;
 }
 @media (max-width: 47.9em) {
+  .small-title {
+    /* margin: 20px 0 10px 0; */
+    margin-bottom: 10px;
+  }
+
   .author-info .author-avatar {
     float: none;
     margin: 0 auto;
@@ -2273,9 +2347,10 @@ body .frame-line.left-frame {
 .img-with-caption:last-child {
   margin-bottom: 0;
 }
-.small-title {
+/* .small-title {
   margin-bottom: 30px;
-}
+} */
+
 .small-title h1,
 .small-title h2,
 .small-title h3,
@@ -2301,6 +2376,7 @@ body .frame-line.left-frame {
   display: inline-block;
   color: #ba84bc;
 }
+
 .progress-bar {
   margin-bottom: 10px;
   overflow: hidden;
@@ -2739,7 +2815,7 @@ body .frame-line.left-frame {
     padding: 0 20px;
   }
   .service-box {
-    margin-bottom: 60px;
+    margin: 25px 0;
   }
   .service-sep {
     height: 0;
