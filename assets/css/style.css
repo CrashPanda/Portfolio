@@ -1537,7 +1537,7 @@ body .frame-line.left-frame {
   }
   .primary-menu > ul li:not(.sub-active):hover > a,
   .primary-menu > ul li.sub-active > a {
-    /* background-color: #151515; */
+    background-color: #151515;
     /* color: #fff; */
   }
   .primary-menu > ul a {
