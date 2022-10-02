@@ -1586,6 +1586,10 @@ body .frame-line.left-frame {
     display: none !important;
   }
 
+    .secondary-menu {
+    padding-top: 100px;
+  }
+
   .button-container {
     padding: 25px;
   }
