@@ -1339,6 +1339,10 @@ body .frame-line.left-frame {
 
 @media (min-width: 48em) {
   
+  .header-wrap {
+    padding: 50px 10px;
+  }
+  
   .header-wrap.minimal-menu .primary-menu {
     visibility: hidden;
     transition: opacity 0.45s ease-in-out;
