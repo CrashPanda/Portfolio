@@ -1162,10 +1162,6 @@ body .frame-line.left-frame {
     margin-top: 15px;
   }
 
-  /* .services-2 {
-    margin-top: 50px;
-  } */
-
   .gutter {
     margin-top: 50px;
   }
@@ -1586,8 +1582,12 @@ body .frame-line.left-frame {
     display: none !important;
   }
 
-    .secondary-menu {
+  .secondary-menu {
     padding-top: 100px;
+  }
+
+  .filters-wrap  {
+     margin: 180px 0 0;
   }
 
   .button-container {
@@ -1608,7 +1608,6 @@ body .frame-line.left-frame {
 .filters-wrap {
   /* opacity: 0; */
   /* visibility: hidden; */
-  margin: 180px 0 0;
   display: inline-block;
   float: right;
   transition: all 0.3s 0.12s ease-in-out;
@@ -1654,7 +1653,7 @@ body .frame-line.left-frame {
 @media (max-width: 33.9em) {
   .filters-wrap a {
     display: block;
-    margin: 0 15px 10px;
+    margin: 0;
   }
 }
 .portfolio-masonry-wrapper {
